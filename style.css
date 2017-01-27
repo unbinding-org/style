@@ -1,0 +1,110 @@
+body {
+  --white: #F8F7F4;
+  --black: #393532;
+  --ochre: #BE6135;
+  --ochre-light: #D47D48;
+  --ochre-dark: #622816;
+  --nav-height: 6em;
+  --blue: #7A9C8E;
+  --blue-light: #9EBAB1;
+  --blue-dark: #3B584A;
+  background-color: var(--white);
+  font-family: sans-serif;
+  color: var(--black);
+  margin: 2em 5em;
+  padding-top: var(--nav-height);
+  zoom: 1.25;
+  line-height: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+  font-family: sans-serif;
+  zoom: 1.25;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+
+nav {
+  background: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height);
+  display: block;
+  padding: 2em 5em;
+  margin-bottom: 2em;
+}
+
+nav h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 2em  ;
+}
+
+p {
+  max-width: 30em;
+}
+
+a {
+  font-weight: 100;
+  color: var(--ochre);
+  text-decoration: none;
+  border-bottom: 1px dashed var(--ochre);
+}
+
+a:hover {
+  color: var(--ochre-dark);
+  border-bottom: 1px dashed var(--ochre-dark);
+  transition: 0.5s;
+}
+
+button {
+  color: var(--white);
+  font-weight: 100;
+  border: none;
+  padding: 0.7em 1.75em;
+  font-size: 1em;
+  border-radius: 1px;
+  transition: 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-primary {
+  background-color: var(--ochre);
+}
+.btn-primary:hover {
+  background-color: var(--ochre-dark);
+}
+.btn-primary:focus, .btn-primary:active {
+  outline: none;
+  background-color: var(--ochre-light);
+}
+
+.btn-secondary {
+  background-color: var(--blue);
+}
+.btn-secondary:hover {
+  background-color: var(--blue-dark);
+}
+.btn-secondary:focus, .btn-secondary:active {
+  outline: none;
+  background-color: var(--blue-light);
+}

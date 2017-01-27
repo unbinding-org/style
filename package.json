@@ -1,0 +1,14 @@
+{
+  "name": "unbinding-style",
+  "version": "1.0.0",
+  "description": "styleguide for Unbinding",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js --live"
+  },
+  "author": "kareniel",
+  "license": "MIT",
+  "dependencies": {
+    "budo": "^9.4.5"
+  }
+}
