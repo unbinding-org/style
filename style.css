@@ -17,6 +17,16 @@ body {
   line-height: 2;
 }
 
+::selection {
+  background: var(--black); /* WebKit/Blink Browsers */
+  color: var(--white);
+}
+
+::-moz-selection {
+  background: var(--black); /* WebKit/Blink Browsers */
+  color: var(--white);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   font-family: sans-serif;
@@ -25,17 +35,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 h2 {
+  font-weight: 400;
 
 }
 
 h3 {
+  font-weight: 300;
 
 }
 
+.logo {
+}
 
 nav {
   background: none;
@@ -49,14 +63,10 @@ nav {
   margin-bottom: 2em;
 }
 
-nav h1 {
-  margin: 0;
-  font-weight: 800;
-  font-size: 2em  ;
-}
 
 p {
   max-width: 30em;
+  font-weight: 100;
 }
 
 a {
@@ -76,10 +86,11 @@ button {
   color: var(--white);
   font-weight: 100;
   border: none;
-  padding: 0.7em 1.75em;
+  padding: 1ex 2ex;
   font-size: 1em;
   border-radius: 1px;
   transition: 0.5s;
+  letter-spacing: 1px;
 }
 
 button:hover {
